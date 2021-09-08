@@ -4,26 +4,6 @@
 
 Clone this repository and bring the code pieces you need into your BDSA Assignments GitHub repository.
 
-### Prerequisites
-
-Add the `coverlet.msbuild` package to Assignment1.Tests:
-
-```powershell
-dotnet add .\Assignment1.Tests\ package coverlet.msbuild
-```
-
-Update all packages:
-
-```powershell
-.\Update-AllPackages.ps1
-```
-
-Run the `dotnet watch` for your test project:
-
-```powershell
-dotnet watch --project .\Assignment1.Tests test /p:CollectCoverage=true /p:CoverletOutputFormat=lcov /p:CoverletOutput=./obj/lcov.info
-```
-
 ### Generics
 
 Compare the following two methods:
