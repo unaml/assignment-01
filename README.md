@@ -157,21 +157,17 @@ A passenger aircraft is composed of several millions of individual parts and req
 
 ### Exercise 5
 
-1. Consider your watch (or the watch of a friend of yours that you can inspect) as a system and set the time 2 minutes ahead. Write down each interaction between you and the watch __as a scenario__. Record all interactions, including any feedback the watch provides you.
-1. Consider the scenario you just wrote.
-    - Identify the actor of the scenario.
-    - Next, write the corresponding __use case__ SetTime.
-1. Assume the watch system you described in point 1 and 2 also supports an alarm feature. Describe setting the alarm time as a self-contained __use case__ named SetAlarmTime.
-1. Examine the SetTime and SetAlarmTime use cases you wrote in point 2 and 3. Eliminate any redundancy by using an __include relationship__.
-1. Why an include relationship is preferable to an extend relationship in point 4?
+Specify which of these statements are functional requirements and which are nonfunctional requirements:
+
+- “The TicketDistributor must enable a traveler to buy weekly passes.”
+- “The TicketDistributor must be written in Java.”
+- “The TicketDistributor must be easy to use.”
+- “The TicketDistributor must always be available.”
+- “The TicketDistributor must provide a phone number to call when it fails.”
 
 ### Exercise 6
 
-The need for developing a complete specification may encourage an analyst to write detailed and lengthy documents. Which competing quality of specification (see Table 4-1 of the OOSE book) may encourage an analyst to keep the specification short?
-
-### Exercise 7
-
-Maintaining traceability during requirements and subsequent activities is expensive, because of the addition information that must be captured and maintained. What are the benefits of traceability that outweigh this overhead?  Mention at least 2 points you would consider.
+What is the purpose of modeling?
 
 ## Submitting the assignment
 
