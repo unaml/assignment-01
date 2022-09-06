@@ -1,6 +1,6 @@
 # Assignment 1
 
-## C&#35;
+## C♯
 
 Clone this repository and bring the code pieces you need into your BDSA Assignments GitHub repository.
 
@@ -10,11 +10,11 @@ Compare the following two methods:
 
 ```csharp
 int GreaterCount<T, U>(IEnumerable<T> items, T x)
-where T : IComparable<T>
+    where T : IComparable<T>;
 
 int GreaterCount<T, U>(IEnumerable<T> items, T x)
-where T : U
-where U : IComparable<U>
+    where T : U
+    where U : IComparable<U>;
 ```
 
 Both methods returns the amount of elements in `items` which are *greater than* `x`.
@@ -30,9 +30,9 @@ Implement and test the latter of the two methods including a type hierarchy whic
 Implement and test the following methods:
 
 ```csharp
-IEnumerable<T> Flatten<T>(IEnumerable<IEnumerable<T>> items)
+IEnumerable<T> Flatten<T>(IEnumerable<IEnumerable<T>> items);
 
-IEnumerable<T> Filter<T>(IEnumerable<T> items, Predicate<T> predicate)
+IEnumerable<T> Filter<T>(IEnumerable<T> items, Predicate<T> predicate);
 ```
 
 1. `Flatten` takes as argument a stream of a stream of `T`'s. It should return a stream of `T`'s.
@@ -46,15 +46,9 @@ You must `yield` elements and not use a temporary in-memory collection.
 You can declare a `Predicate` likes this:
 
 ```csharp
-public static void Main(string[] args)
-{
-    Predicate<int> even = Even;
-}
+Predicate<int> even = Even;
 
-public static bool Even(int i)
-{
-    return i % 2 == 0;
-}
+bool Even(int i) => i % 2 == 0;
 ```
 
 ### Regular Expressions
@@ -62,11 +56,13 @@ public static bool Even(int i)
 Implement and test the following methods:
 
 ```csharp
-IEnumerable<string> SplitLine(IEnumerable<string> lines)
+IEnumerable<string> SplitLine(IEnumerable<string> lines);
 
-IEnumerable<(int width, int height)> Resolutions(IEnumerable<string> resolutions)
+IEnumerable<(int width, int height)> Resolutions(IEnumerable<string> resolutions);
 
-IEnumerable<string> InnerText(string html, string tag)
+IEnumerable<string> InnerText(string html, string tag);
+
+IEnumerable<(Uri url, string title)> Urls(string html);
 ```
 
 1. `SplitLine` takes as argument a stream of lines (strings) and returns a stream of the words on those lines (also strings).
@@ -98,6 +94,8 @@ A 'word' is a non-empty contiguous sequence of the letters a–z or A–Z or the
 
 1. `InnerText` takes as arguments a string containing HTML and a specific tag name. It returns the *inner text* of each of those tags. Use a regular expression with a *back reference* to match tags.
 
+1. `Urls` takes as argument a string containing HTML and returns all urls with their titles if any, otherwise `innerText`.
+
 #### Notes
 
 You must `yield` elements and not use a temporary in-memory collection.
@@ -106,7 +104,7 @@ Given the following `html` and the tag `a`:
 
 ```html
 <div>
-    <p>A <b>regular expression</b>, <b>regex</b> or <b>regexp</b> (sometimes called a <b>rational expression</b>) is, in <a href="/wiki/Theoretical_computer_science" title="Theoretical computer science">theoretical computer science</a> and <a href="/wiki/Formal_language" title="Formal language">formal language</a> theory, a sequence of <a href="/wiki/Character_(computing)" title="Character (computing)">characters</a> that define a <i>search <a href="/wiki/Pattern_matching" title="Pattern matching">pattern</a></i>. Usually this pattern is then used by <a href="/wiki/String_searching_algorithm" title="String searching algorithm">string searching algorithms</a> for "find" or "find and replace" operations on <a href="/wiki/String_(computer_science)" title="String (computer science)">strings</a>.</p>
+    <p>A <b>regular expression</b>, <b>regex</b> or <b>regexp</b> (sometimes called a <b>rational expression</b>) is, in <a href="https://en.wikipedia.org/wiki/Theoretical_computer_science" title="Theoretical computer science">theoretical computer science</a> and <a href="https://en.wikipedia.org/wiki/Formal_language" title="Formal language">formal language</a> theory, a sequence of <a href="https://en.wikipedia.org/wiki/Character_(computing)" title="Character (computing)">characters</a> that define a <i>search <a href="https://en.wikipedia.org/wiki/Pattern_matching" title="Pattern matching">pattern</a></i>. Usually this pattern is then used by <a href="https://en.wikipedia.org/wiki/String_searching_algorithm" title="String searching algorithm">string searching algorithms</a> for "find" or "find and replace" operations on <a href="https://en.wikipedia.org/wiki/String_(computer_science)" title="String (computer science)">strings</a>.</p>
 </div>
 ```
 
@@ -129,26 +127,27 @@ You should support nested html tags such that given the following `html` and the
 
 The `InnerText` method should return:
 
->The phrase regular expressions (and consequently, regexes) is often used to mean the specific, standard textual syntax for representing patterns that matching text need to conform to.
+> The phrase regular expressions (and consequently, regexes) is often used to mean the specific, standard textual syntax for representing patterns that matching text need to conform to.
 
 ## Software Engineering
 
 ### Exercise 1
 
-What is meant by “knowledge acquisition is not sequential”? Provide a concrete example of knowledge acquisition that illustrates this.
+What is meant by "knowledge acquisition is not sequential"? Provide a concrete example of knowledge acquisition that illustrates this.
 
 ### Exercise 2
 
 Specify which of the following decisions were made during requirements or system design:
 
-- “The ticket distributor is composed of a user interface subsystem, a subsystem for computing tariff, and a
-network subsystem managing communication with the central computer.”
-- “The ticket distributor will use PowerPC processor chips.”
-- “The ticket distributor provides the traveler with an on-line help.”
+- "The ticket distributor is composed of a user interface subsystem, a subsystem for computing tariff, and a
+network subsystem managing communication with the central computer."
+- "The ticket distributor will use PowerPC processor chips."
+- "The ticket distributor provides the traveler with an on-line help."
 
 ### Exercise 3
 
 In the following description, explain when the term account is used as an application domain concept and when as a solution domain concept:
+
 > "Assume you are developing an online system for managing bank accounts for mobile customers. A major design issue is how to provide access to the accounts when the customer cannot establish an online connection. One proposal is that accounts are made available on the mobile computer, even if the server is not up. In this case, the accounts show the amounts from the last connected session."
 
 ### Exercise 4
@@ -159,11 +158,11 @@ A passenger aircraft is composed of several millions of individual parts and req
 
 Specify which of these statements are functional requirements and which are nonfunctional requirements:
 
-- “The TicketDistributor must enable a traveler to buy weekly passes.”
-- “The TicketDistributor must be written in Java.”
-- “The TicketDistributor must be easy to use.”
-- “The TicketDistributor must always be available.”
-- “The TicketDistributor must provide a phone number to call when it fails.”
+- "The TicketDistributor must enable a traveler to buy weekly passes."
+- "The TicketDistributor must be written in Java."
+- "The TicketDistributor must be easy to use."
+- "The TicketDistributor must always be available."
+- "The TicketDistributor must provide a phone number to call when it fails."
 
 ### Exercise 6
 
