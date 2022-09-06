@@ -1,8 +1,5 @@
-using Xunit;
+namespace Assignment1.Tests;
 
-namespace Assignment1.Tests
+public class RegExprTests
 {
-    public class RegExprTests
-    {
-    }
 }
