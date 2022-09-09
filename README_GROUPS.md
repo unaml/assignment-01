@@ -12,7 +12,7 @@ If you switch to another group, send a pull request to this file that indicates 
 * Group 4: mhvl, noms, mlth
 * Group 5: jacg, maxt, vime
 * Group 6: luel, malsc, laup
-* Group 7: seel, ntro, chbl
+* Group 7: seel, ntro, 
 * Group 8: nkrj, ahad, mbln
 * Group 9: brml, nicha, mhsi
 * Group 10: eikb, bemi, dadh
@@ -29,7 +29,7 @@ If you switch to another group, send a pull request to this file that indicates 
 * Group 21: ivil, asgm, frjo
 * Group 22: bath, ehel, jakst
 * Group 23: reer, aarv, lanr
-* Group 24: luha, base, esmi
+* Group 24: luha, base, chbl
 * Group 25: avia, remy, selb
 * Group 26: kbej, dlha, elbr
 * Group 27: raoo, annro, aegr
