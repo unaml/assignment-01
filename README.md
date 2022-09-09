@@ -129,45 +129,75 @@ The `InnerText` method should return:
 
 > The phrase regular expressions (and consequently, regexes) is often used to mean the specific, standard textual syntax for representing patterns that matching text need to conform to.
 
+---
+
 ## Software Engineering
+
+
+Let's say that the following is a natural language specification of a _version control system_:
+
+  > I want a version control system that records changes to a file or set of files over time so that I can recall specific versions later.
+  > This system should work on any kind of files may they contain source code, configuration data, diagrams, binaries, etc.
+  > 
+  > I want to use such a system to be able to revert selected files back to a previous state, revert the entire project back to a previous state, to compare changes over time, to see who last modified something that might be causing a problem, who introduced an issue and when, etc.
+
 
 ### Exercise 1
 
-What is meant by "knowledge acquisition is not sequential"? Provide a concrete example of knowledge acquisition that illustrates this.
+Use the noun/verb technique from _"Objects First with Java: A Practical Introduction Using BlueJ"_ chapter 15, to analyze the given description.
+
+1. Explain in which domain nouns and verbs that you identified are located.
+2. The implementation in [libgit2sharp](https://github.com/libgit2/libgit2sharp) does neither contain a class `File` nor a class `State`.
+Explain how that can be when [libgit2sharp](https://github.com/libgit2/libgit2sharp) is an implementation of Git which is certainly a version control system as described above.
+
 
 ### Exercise 2
 
-Specify which of the following decisions were made during requirements or system design:
+In class we discussed so far the Coronapas App and Git as cases for software systems.
 
-- "The ticket distributor is composed of a user interface subsystem, a subsystem for computing tariff, and a
-network subsystem managing communication with the central computer."
-- "The ticket distributor will use PowerPC processor chips."
-- "The ticket distributor provides the traveler with an on-line help."
+1. Categorize each of the two systems into Sommervilles types of applications.
+Note, the systems may not fall cleanly into a single category.
+2. Argue for why you choose certain categories for each system.
+
 
 ### Exercise 3
 
-In the following description, explain when the term account is used as an application domain concept and when as a solution domain concept:
+Sommerville describes that there are two kinds of software products.
+Describe for the Coronapas App and Git what kind of software product they are and provide arguments for your believes.
 
-> "Assume you are developing an online system for managing bank accounts for mobile customers. A major design issue is how to provide access to the accounts when the customer cannot establish an online connection. One proposal is that accounts are made available on the mobile computer, even if the server is not up. In this case, the accounts show the amounts from the last connected session."
 
 ### Exercise 4
 
-A passenger aircraft is composed of several millions of individual parts and requires thousands of persons to assemble. A four-lane highway bridge is another example of complexity. The first version of Word for Windows, a word processor released by Microsoft in November 1989, required 55 person-years, resulted into 249,000 lines of source code, and was delivered 4 years late. Aircraft and highway bridges are usually delivered on time and below budget, whereas software is often not. Discuss what are, in your opinion, the differences between developing an aircraft, a bridge, and a word processor, which would cause this situation.
+Sommerville discusses _quality of professional software_, non-functional quality attributes, or product characteristics.
+Compare the Coronapas App, Git, and the Insulin pump control system (see SE chap 1.3.1) with respect to the quality attributes _dependability_, _security_, _efficiency_, and _maintainability_.
+
+Do they all share the same characteristics with regards to these quality attributes or are these of varying importance to the three systems?
+Give examples for each of the three systems with regards to each if the quality attributes above.
+
 
 ### Exercise 5
 
-Specify which of these statements are functional requirements and which are nonfunctional requirements:
+Inspect the implementations [Gitlet](http://gitlet.maryrosecook.com/docs/gitlet.html) and [Git](https://github.com/git/git/) a bit more thoroughly than in class.
 
-- "The TicketDistributor must enable a traveler to buy weekly passes."
-- "The TicketDistributor must be written in Java."
-- "The TicketDistributor must be easy to use."
-- "The TicketDistributor must always be available."
-- "The TicketDistributor must provide a phone number to call when it fails."
+1. Explain why is there likely no architecture for Gitlet.
+2. How could you infer the architecture of Git that was depicted in class without any more documentation, i.e., only the available source code?
+3. Gitlet has a particular design that mimics the architecture of Git but that is implemented differently. Can you describe it in words?
+4. Git and Gitlet are designed with respect to different quality attributes (product characteristics). Name some of the most prominent quality attributes that influence the design of each of the two systems.
+
 
 ### Exercise 6
 
-What is the purpose of modeling?
+Look at the following two cases of issues with health care software systems:
+  * [_"Softwareproblemer skadede mere end 100 patienter på amerikansk hospital"_](https://www.version2.dk/artikel/softwareproblemer-skadede-mere-end-100-patienter-paa-amerikansk-hospital)
+  * [_"Kodefejl i Sundhedsplatformen: Fem patienter har fået forkert dosis medicin"_](https://www.version2.dk/artikel/kodefejl-i-sundhedsplatformen-fem-patienter-har-faaet-forkert-dosis-medicin)
+
+1. Based on the articles, describe the reasons that caused the respective issues.
+2. Describe potential solutions to the problem.
+3. Compare your solutions to the proposed solutions in the articles, which one would you as a software engineer recommend? Argue for your recommendations.
+4. Discuss ethical dilemas in case you were developing either of these health care systems.
+
+---
 
 ## Submitting the assignment
 
-To submit the assignment you need to create a .pdf document using LaTeX containing the answers to the questions and a link to a public repository containing your fork of the completed code.
+To submit the assignment you need to create a .pdf document using LaTeX containing the answers to the questions and a link to a public repository containing your fork with the completed code.
