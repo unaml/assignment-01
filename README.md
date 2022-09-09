@@ -200,4 +200,8 @@ Look at the following two cases of issues with health care software systems:
 
 ## Submitting the assignment
 
-To submit the assignment you need to create a .pdf document using LaTeX containing the answers to the questions and a link to a public repository containing your fork with the completed code.
+To submit the assignment you need to create a PDF document using LaTeX that contains the answers to the questions **and** a link to a public GitHub repository that contains a fork of the assignments repository with the completed code.
+
+The PDF file must conform to the following naming convention: `group_<x>_<id1>_<id2>_<id3>_assignment_01.pdf`, where `<x>` is replaced by the number of your group from [README_GROUPS.md](./README_GROUPS.md) and `<id1>`, `<id2>`, and `<id3>` are your respective ITU identifiers. 
+
+You submit via [LearnIT](https://learnit.itu.dk/mod/assign/view.php?id=164354).
