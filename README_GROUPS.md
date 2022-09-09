@@ -16,7 +16,7 @@ If you switch to another group, send a pull request to this file that indicates 
 * Group 8: nkrj, ahad, mbln
 * Group 9: brml, nicha, mhsi
 * Group 10: eikb, bemi, dadh
-* Group 11: lufr, rasni, jsev
+* Group 11: lufr, rasni, mfjo
 * Group 12: adjr, teim, olfw
 * Group 13: mbia, shho, clly
 * Group 14: jouj, fefa, hecn
@@ -43,7 +43,7 @@ If you switch to another group, send a pull request to this file that indicates 
 * Group 35: maxt, tuho, millh
 * Group 36: asjo, aldy, skas
 * Group 37: aing, memr, phla
-* Group 38: behv, tokj, mfjo
+* Group 38: behv, tokj, jsev
 * Group 39: tbav, nlje, gues
 * Group 40: tcla, siol, siar
 * Group 41: sibh, crco, kmey
