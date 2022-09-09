@@ -7,7 +7,7 @@ If you switch to another group, send a pull request to this file that indicates 
 
 
 * Group 1: mroa, atro, mesv
-* Group 2: midf, jevb
+* Group 2: midf, jevb, stmp
 * Group 3: nidd, tosp, rakt
 * Group 4: mhvl, noms, mlth
 * Group 5: jacg, maxt, vime
