@@ -7,7 +7,7 @@ If you switch to another group, send a pull request to this file that indicates 
 
 
 * Group 1: mroa, atro, mesv
-* Group 2: midf, jevb, mbjn
+* Group 2: midf, jevb
 * Group 3: nidd, tosp, rakt
 * Group 4: mhvl, noms, mlth
 * Group 5: jacg, shad, vime
@@ -19,7 +19,7 @@ If you switch to another group, send a pull request to this file that indicates 
 * Group 11: lufr, rasni, jsev
 * Group 12: adjr, teim, olfw
 * Group 13: mbia, shho, clly
-* Group 14: hecn, jouj, fefa
+* Group 14: jouj, fefa, hecn
 * Group 15: kmsa, omac, biha
 * Group 16: hcan, vist, bjhh
 * Group 17: nihp, ojoh, mreh
@@ -53,4 +53,4 @@ If you switch to another group, send a pull request to this file that indicates 
 * Group 45: labp, jric, laku
 * Group 46: amdh, frai, weny
 * Group 47: mhve, frhc, bhag
-* Group 48: unla, asly
+* Group 48: unla, asly, mbjn
