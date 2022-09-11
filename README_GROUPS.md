@@ -52,5 +52,5 @@ If you switch to another group, send a pull request to this file that indicates 
 * Group 44: monha, ssbo, timj
 * Group 45: labp, jric, laku
 * Group 46: amdh, frai, weny
-* Group 47: mhve, frhc, bhag
+* Group 47: Emno, frhc, bhag
 * Group 48: unla, asly, mbjn
